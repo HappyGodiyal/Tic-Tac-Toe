@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+.player{
+    height: 2.5vw;
+    width: 12vw;
+    /* background-color: aqua; */
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+.game{
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+    background-color: black;
+}
+.newgame{
+    height: 2.5vw;
+    width: 12vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box{
+    height: 5vw;
+    width: 5vw;
+    position: relative;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+    color: white;
+}
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-bottom: 2px solid white;
+}
+.box3{
+    border-right: 2px solid white;
+}
+.box6{
+    border-right: 2px solid white;
+}
+
+.green{
+    background-color: green;
+}
+
+@media (max-width: 600px){
+
+    .player{
+        width: 30vw;
+        height: 4vh;
+    }
+    .player h2{
+        font-size: 1.5vh;
+    }
+    .game{
+        height: 25vh;
+        width: 50vw;
+    }
+    .box{
+        height:6.5vh;
+        width: 6.5vh;
+        font-size: 5vh;
+    }
+
+    .newgame{
+        width: 30vw;
+        height: 4vh;
+    }
+    .newgame h2{
+        font-size: 1.5vh;
+    }
+    p{
+        margin-top: 15vh;
+    }
+    
+}
